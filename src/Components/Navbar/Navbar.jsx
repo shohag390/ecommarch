@@ -37,9 +37,24 @@ const navLink = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar, setNavbar] = useState(true);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <header className="">
+    <header
+      className={`sticky top-0 left-0 z-50 ${
+        !navbar ? "border-b-[1px]" : "box_shadow border-b-[1px]"
+      }`}
+    >
       <div className="md:h-[4vh] h-[3vh] w-[100%] bg-[#00718F] flex items-center justify-between md:px-[80px] px-[20px]">
         <div className="flex items-center md:gap-[20px] gap-[10px]">
           <Link className="text-white text-[12px] hover:text-[tomato]">
@@ -64,8 +79,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[white] md:h-[9vh] h-[6vh] shadow-md md:px-[80px] px-[20px] flex items-center justify-between sticky top-0 left-0 z-50">
-        <div className="flex items-center gap-[3px]">
+      <div className="bg-[white] md:h-[9vh] h-[6vh] md:px-[80px] px-[20px] flex items-center justify-between">
+        <Link to={"/home"} className="flex items-center gap-[3px]">
           <img
             className="md:h-[55px] h-[40px] md:w-[55px] w-[40px] "
             src={logo}
@@ -74,7 +89,7 @@ const Navbar = () => {
           <span className="md:text-xl text-[16px] font-bold text-[#00718F]">
             Shop
           </span>
-        </div>
+        </Link>
         <ul className="md:flex md:items-center md:gap-[30px] hidden">
           {navLink?.map((link) => (
             <li>
@@ -123,8 +138,8 @@ const Navbar = () => {
         <ul
           className={`md:hidden py-[30px] w-full flex px-[20px] gap-[20px] justify-center flex-col duration-500 ${
             !isOpen
-              ? "absolute top-[6vh] w-[100%] h-[91vh] left-[-1000px]"
-              : "absolute top-[6vh] bg-[white] w-[100%] h-[91vh] left-0"
+              ? "absolute top-[9vh] w-[100%] h-[91vh] left-[-1000px]"
+              : "absolute top-[9vh] bg-[white] w-[100%] h-[91vh] left-0"
           }`}
         >
           {navLink?.map((link) => (
