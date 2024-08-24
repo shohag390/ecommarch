@@ -8,3 +8,75 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner_btn_two {
+  background-image: url(./assets/Image/bg-image/btn-brush-bg-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: white;
+  border: 1px solid tomato;
+  opacity: 100% !important;
+  border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #00718f !important;
+  border: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 100% !important;
+  color: white;
+  transition: 0.3s;
+}
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+  background: #00708fc9;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 10px !important;
+}
+
+.feature_card {
+  box-shadow: 0px 0px 3px gray;
+  transition: 0.3s;
+}
+.feature_card:hover {
+  box-shadow: 0px 0px 1px gray;
+}
+
+.feature_card:hover img {
+  transform: translateY(-10px);
+}
+
+.card_image_one {
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.card:hover .card_image_two {
+  z-index: 1;
+}
+
+.addbannerOne {
+  background-image: url(./assets/Image/bg-image/banner-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+HeadingTextColor: #00718F
+ButtonPrimeryColor: #00718F
+ButtonHoverColor:#00556c
+ */

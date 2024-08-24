@@ -37,7 +37,7 @@ const navLink = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbar, setNavbar] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <header
       className={`sticky top-0 left-0 z-50 ${
-        !navbar ? "border-b-[1px]" : "box_shadow border-b-[1px]"
+        !navbar ? "border-b-[1px]" : "border-b-[1px] box_shadow"
       }`}
     >
       <div className="md:h-[4vh] h-[3vh] w-[100%] bg-[#00718F] flex items-center justify-between md:px-[80px] px-[20px]">
