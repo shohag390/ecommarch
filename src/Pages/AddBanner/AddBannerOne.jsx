@@ -2,7 +2,7 @@ import React from "react";
 
 const AddBannerOne = () => {
   return (
-    <div className="md:px-[80px] px-[20px] md:py-[40px]">
+    <div className="md:px-[80px] px-[20px] md:pt-[60px]">
       <div className="w-full h-[280px] addbannerOne items-start flex flex-col justify-center px-[40px]">
         <p className="text-xl font-semibold text-[#00718f]">Repair Services</p>
         <h4 className="text-3xl font-bold pt-[10px]">We're an Apple</h4>
@@ -22,3 +22,4 @@ export default AddBannerOne;
 // HeadingTextColor: #00718F
 // ButtonPrimeryColor: #00718F
 // ButtonHoverColor:#00556c
+// Section to section Destance : md: 80px

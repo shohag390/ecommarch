@@ -18,28 +18,31 @@
 .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
-  background-color: white;
-  border: 1px solid tomato;
+  background-color: #1e3d59;
   opacity: 100% !important;
   border-radius: 10px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #00718f !important;
+  background: #ff6e40 !important;
   border: none !important;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  height: 35px !important;
-  width: 35px !important;
+  height: 40px !important;
+  width: 40px !important;
   border-radius: 100% !important;
   color: white;
   transition: 0.3s;
 }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #ff6e40 !important;
+}
 .mySwiper:hover .swiper-button-next,
 .mySwiper:hover .swiper-button-prev {
-  background: #00708fc9;
+  background: #1e3d59;
 }
 
 .swiper-button-next:after,
@@ -48,11 +51,10 @@
 }
 
 .feature_card {
-  box-shadow: 0px 0px 3px gray;
   transition: 0.3s;
 }
 .feature_card:hover {
-  box-shadow: 0px 0px 1px gray;
+  box-shadow: 0px 0px 8px #1e3d59;
 }
 
 .feature_card:hover img {
@@ -75,8 +77,53 @@
   background-size: cover;
 }
 
+.bannerTwoOne {
+  background-image: url(./assets/Image/bg-image/banner-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerTwoTwo {
+  background-image: url(./assets/Image/bg-image/banner-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerTwoThree {
+  background-image: url(./assets/Image/bg-image/banner-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  order: -2;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px #1e3d59;
+}
+
+.hover_btn {
+  bottom: -350px;
+  transition: 0.5s;
+}
+.card:hover .hover_btn {
+  bottom: 0;
+}
+
 /* 
-HeadingTextColor: #00718F
-ButtonPrimeryColor: #00718F
-ButtonHoverColor:#00556c
+ HeaderText-Color :#1e3d59
+ BgColor-Color :#1e3d59
+ ParagraphText: #f5f0e1
+ Button-Color :#1e3d59
+ HoverButton-Color :#ff6e40
+ md:py-[50px]
+ md:px-[80px] px-[20px]
+
  */

@@ -41,7 +41,7 @@ const featureItem = [
 
 const Feature = () => {
   return (
-    <div className="md:px-[80px] w-full md:py-[50px] px-[20px] md:flex md:justify-between items-center gap-[20px] bg-[white]">
+    <div className="md:px-[80px] w-full md:py-[50px] px-[20px] grid md:grid-cols-6 md:gap-[20px] bg-[#f5f0e1]">
       {featureItem?.map((feature, index) => (
         <div
           className="flex feature_card flex-col items-center justify-center gap-[20px] border-[1px] h-[200px] rounded-md px-[20px] bg-white w-full"
@@ -67,3 +67,11 @@ const Feature = () => {
 };
 
 export default Feature;
+
+// HeaderText-Color :#1e3d59
+// BgColor-Color :#1e3d59
+// ParagraphText: #f5f0e1
+// Button-Color :#1e3d59
+// HoverButton-Color :#ff6e40
+//md:py-[50px]
+//md:px-[80px] px-[20px]

@@ -1,5 +1,6 @@
-import React from "react";
-import { categories } from "../assets/data/categories";
+import React, { useRef, useState } from "react";
+
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -7,58 +8,58 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
+import SwiperBtn from "../Components/SwiperBtn/SwiperBtn";
+import { categories } from "../assets/data/categories";
 
 const Categories = () => {
   return (
-    <div className="md:px-[80px] px-[20px] md:py-[50px] py-[30px]">
-      <div className="pb-[20px]">
-        <h4 className="text-xl font-semibold">
-          <span className="text-[#00718f]">Popular</span> Categories
-        </h4>
-      </div>
-      <div>
-        <Swiper
-          navigation={true}
-          loop={true}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 6,
-              spaceBetween: 20,
-            },
-          }}
-          modules={[Navigation]}
-          className="mySwiper"
-        >
-          <div>
-            {categories?.map((item, index) => (
-              <SwiperSlide
-                key={index}
-                className="border-2 cursor-pointer p-[8px] rounded-lg flex flex-col items-center justify-center gap-[10px]"
-              >
-                <div>
-                  <img
-                    className="w-[200px] h-[150px] rounded-md"
-                    src={item?.image}
-                    alt="image"
-                  />
-                </div>
-                <h4 className="font-semibold text-[#00718f]">{item?.name}</h4>
-              </SwiperSlide>
-            ))}
-          </div>
-        </Swiper>
-      </div>
+    <div className="md:py-[80px] md:px-[80px] container">
+      <Swiper
+        slidesPerView={6}
+        spaceBetween={10}
+        loop={true}
+        navigation={{
+          nextEl: "review-swiper-button-next",
+          prevEl: "review-swiper-button-prev",
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+        }}
+        modules={[Navigation]}
+        className=""
+      >
+        <SwiperBtn title="Popular Categories" />
+        <div>
+          {categories?.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="border-[1px] p-[10px] flex items-center justify-center flex-col"
+            >
+              <img src={item?.image} alt="" />
+              <h4>{item?.name}</h4>
+            </SwiperSlide>
+          ))}
+        </div>
+      </Swiper>
     </div>
   );
 };
 
 export default Categories;
+
+// HeadingTextColor: #00718F
+// ButtonPrimeryColor: #00718F
+// ButtonHoverColor:#00556c
+// Section to section Destance : md: 80px

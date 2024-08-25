@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="h-[80vh] w-full bg-[white] md:px-[80px] px-[20px]">
+    <div className="h-[80vh] w-full bg-[#f5f0e1] md:px-[80px] px-[20px]">
       <Swiper
         autoplay={{
           delay: 10000,
@@ -32,20 +32,20 @@ const Banner = () => {
         modules={[Autoplay, Navigation, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="bg-[white]">
+        <SwiperSlide className="bg-[#f5f0e1]">
           <div className="h-[80vh] w-full flex items-center px-[80px]">
             <div className="w-[50%]">
               <h4 className="text-xl font-bold pb-[15px]">Trade-in offer</h4>
               <h1 className="text-4xl font-bold pb-[10px]">
                 Supper Value deals
               </h1>
-              <h1 className="text-5xl font-bold text-[#00718f] pb-[15px]">
+              <h1 className="text-5xl font-bold text-[#1e3d59] pb-[15px]">
                 All on products
               </h1>
               <p className="font-bold text-gray-500 pb-[30px]">
                 Save more with coupons & up to 70% off
               </p>
-              <Link className="banner_btn px-[60px] py-[10px] font-bold text-[#00718f]">
+              <Link className="banner_btn px-[60px] py-[10px] font-bold text-[#1e3d59]">
                 Shop Now
               </Link>
             </div>
@@ -54,38 +54,18 @@ const Banner = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="bg-[white]">
-          <div className="h-[80vh] w-full flex items-center px-[80px]">
-            <div className="w-[50%]">
-              <h4 className="text-xl font-bold pb-[15px]">Upcoming Offer</h4>
-              <h1 className="text-4xl font-bold pb-[10px]">Big Deals From</h1>
-              <h1 className="text-5xl font-bold text-[#00718f] pb-[15px]">
-                Manufacturer
-              </h1>
-              <p className="font-bold text-gray-500 pb-[30px]">
-                Clothing, Shoes, Bags, Wallets...
-              </p>
-              <Link className="banner_btn_two px-[60px] py-[10px] font-bold text-[#00718f]">
-                Discover Now
-              </Link>
-            </div>
-            <div className="w-[50%]">
-              <img src={banner_two} alt="image" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="bg-[white]">
+        <SwiperSlide className="bg-[#f5f0e1]">
           <div className="h-[80vh] w-full flex items-center px-[80px]">
             <div className="w-[50%]">
               <h4 className="text-xl font-bold pb-[15px]">Hot promotions</h4>
               <h1 className="text-4xl font-bold pb-[10px]">Fashion Trending</h1>
-              <h1 className="text-5xl font-bold text-[#00718f] pb-[15px]">
+              <h1 className="text-5xl font-bold text-[#1e3d59] pb-[15px]">
                 Great Collection
               </h1>
               <p className="font-bold text-gray-500 pb-[30px]">
                 Save more with coupons & up to 20% off
               </p>
-              <Link className="banner_btn px-[60px] py-[10px] font-bold text-[#00718f]">
+              <Link className="banner_btn px-[60px] py-[10px] font-bold text-[#1e3d59]">
                 Shop Now
               </Link>
             </div>
@@ -100,3 +80,11 @@ const Banner = () => {
 };
 
 export default Banner;
+
+// HeaderText-Color :#1e3d59
+// BgColor-Color :#1e3d59
+// ParagraphText: #f5f0e1
+// Button-Color :#1e3d59
+// HoverButton-Color :#ff6e40
+//md:py-[50px]
+//md:px-[80px] px-[20px]

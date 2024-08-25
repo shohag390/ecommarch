@@ -55,7 +55,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 5,
     review: [
       {
         name: "Shohag Hossen",
@@ -91,7 +91,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 4,
     review: [
       {
         name: "Shohag Hossen",
@@ -127,7 +127,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 2,
     review: [
       {
         name: "Shohag Hossen",
@@ -163,7 +163,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 4,
     review: [
       {
         name: "Shohag Hossen",
@@ -199,7 +199,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 3,
     review: [
       {
         name: "Shohag Hossen",
@@ -235,7 +235,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 5,
     review: [
       {
         name: "Shohag Hossen",
@@ -271,7 +271,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 3,
     review: [
       {
         name: "Shohag Hossen",
@@ -307,7 +307,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 3,
     review: [
       {
         name: "Shohag Hossen",
@@ -343,7 +343,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 5,
     review: [
       {
         name: "Shohag Hossen",
@@ -379,7 +379,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 3,
     review: [
       {
         name: "Shohag Hossen",
@@ -415,7 +415,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 4,
     review: [
       {
         name: "Shohag Hossen",
@@ -451,7 +451,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 5,
     review: [
       {
         name: "Shohag Hossen",
@@ -487,7 +487,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 3,
     review: [
       {
         name: "Shohag Hossen",
@@ -523,7 +523,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 2,
     review: [
       {
         name: "Shohag Hossen",
@@ -559,7 +559,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 5,
     review: [
       {
         name: "Shohag Hossen",
@@ -595,7 +595,7 @@ export const products = [
     price: 120,
     afterPrice: 200,
     discount: "25%",
-    rating: 25,
+    rating: 4,
     review: [
       {
         name: "Shohag Hossen",
