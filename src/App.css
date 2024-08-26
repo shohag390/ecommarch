@@ -1,5 +1,5 @@
 .box_shadow {
-  box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px #1e3d59;
 }
 
 .banner_btn {
@@ -122,6 +122,19 @@
 }
 .card-swiper:hover .hover_btn {
   bottom: 0;
+}
+
+.addbanner_three_one {
+  background-image: url(./assets/Image/bg-image/menu-banner-7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.addbanner_three_two {
+  background-image: url(./assets/Image/bg-image/menu-banner-8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 
