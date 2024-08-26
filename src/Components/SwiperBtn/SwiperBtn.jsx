@@ -6,11 +6,11 @@ const SwiperBtn = ({ title }) => {
   const swiper = useSwiper();
 
   return (
-    <div className="flex items-center justify-between bg-[white] section-header pb-[20px]">
-      <h2 className="text-xl font-semibold">{title}</h2>
-      <div className="flex items-center gap-[20px]">
+    <div className="flex items-center justify-between section-header pb-[20px]">
+      <h2 className="text-[23px] text-[#1e3d59] font-bold">{title}</h2>
+      <div className="flex items-center gap-[10px]">
         <div
-          className="h-[30px] w-[30px] bg-[#00718f] flex items-center justify-center rounded-full text-white"
+          className="h-[30px] w-[30px] bg-[#1e3d59] hover:bg-[#ff6e40] flex items-center justify-center rounded-full text-white"
           onClick={() => swiper.slidePrev()}
         >
           <button className="arrow-button" type="button">
@@ -19,7 +19,7 @@ const SwiperBtn = ({ title }) => {
         </div>
 
         <div
-          className="h-[30px] w-[30px] bg-[#00718f] flex items-center justify-center rounded-full text-white"
+          className="h-[30px] w-[30px] bg-[#1e3d59] hover:bg-[#ff6e40] flex items-center justify-center rounded-full text-white"
           onClick={() => swiper.slideNext()}
         >
           <button className="arrow-button" type="button">
@@ -32,3 +32,11 @@ const SwiperBtn = ({ title }) => {
 };
 
 export default SwiperBtn;
+
+// HeaderText-Color :#1e3d59
+// BgColor-Color :#1e3d59
+// ParagraphText: #f5f0e1
+// Button-Color :#1e3d59
+// HoverButton-Color :#ff6e40
+//md:py-[50px]
+//md:px-[80px] px-[20px]

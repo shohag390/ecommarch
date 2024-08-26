@@ -2,14 +2,14 @@ import React from "react";
 
 const AddBannerOne = () => {
   return (
-    <div className="md:px-[80px] px-[20px] md:pt-[60px]">
-      <div className="w-full h-[280px] addbannerOne items-start flex flex-col justify-center px-[40px]">
-        <p className="text-xl font-semibold text-[#00718f]">Repair Services</p>
+    <div className="md:px-[80px] px-[20px] md:pt-[50px] pb-[5px] bg-[#f5f0e1]">
+      <div className="w-full h-[280px] addbannerOne rounded-md items-start flex flex-col justify-center px-[40px]">
+        <p className="text-xl font-semibold text-[#1e3d59]">Repair Services</p>
         <h4 className="text-3xl font-bold pt-[10px]">We're an Apple</h4>
         <h4 className="text-3xl font-bold pb-[30px]">
           Authorised Service Provider
         </h4>
-        <button className="bg-[#00718F] text-[white] py-[6px] px-[30px] font-semibold rounded-full hover:bg-[#00556c]">
+        <button className="bg-[#1e3d59] duration-500 text-[white] py-[6px] px-[30px] font-bold rounded-md hover:bg-[#ff6e40]">
           Learn More
         </button>
       </div>
@@ -19,7 +19,10 @@ const AddBannerOne = () => {
 
 export default AddBannerOne;
 
-// HeadingTextColor: #00718F
-// ButtonPrimeryColor: #00718F
-// ButtonHoverColor:#00556c
-// Section to section Destance : md: 80px
+// HeaderText-Color :#1e3d59
+// BgColor-Color :#1e3d59
+// ParagraphText: #f5f0e1
+// Button-Color :#1e3d59
+// HoverButton-Color :#ff6e40
+//md:py-[50px]
+//md:px-[80px] px-[20px]

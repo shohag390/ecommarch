@@ -14,10 +14,10 @@ import { categories } from "../assets/data/categories";
 
 const Categories = () => {
   return (
-    <div className="md:py-[80px] md:px-[80px] container">
+    <div className="md:py-[50px] bg-[#f5f0e1] md:px-[80px] container">
       <Swiper
         slidesPerView={6}
-        spaceBetween={10}
+        spaceBetween={20}
         loop={true}
         navigation={{
           nextEl: "review-swiper-button-next",
@@ -34,7 +34,7 @@ const Categories = () => {
           },
           1024: {
             slidesPerView: 6,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
         }}
         modules={[Navigation]}
@@ -45,10 +45,16 @@ const Categories = () => {
           {categories?.map((item, index) => (
             <SwiperSlide
               key={index}
-              className="border-[1px] p-[10px] flex items-center justify-center flex-col"
+              className="p-[10px] flex items-center bg-[white] rounded-[30px] justify-center flex-col gap-[8px]"
             >
-              <img src={item?.image} alt="" />
-              <h4>{item?.name}</h4>
+              <img
+                className="rounded-[20px] h-[160px] w-full"
+                src={item?.image}
+                alt=""
+              />
+              <h4 className="font-bold text-[#1e3d59] pb-[6px]">
+                {item?.name}
+              </h4>
             </SwiperSlide>
           ))}
         </div>
@@ -59,7 +65,10 @@ const Categories = () => {
 
 export default Categories;
 
-// HeadingTextColor: #00718F
-// ButtonPrimeryColor: #00718F
-// ButtonHoverColor:#00556c
-// Section to section Destance : md: 80px
+// HeaderText-Color :#1e3d59
+// BgColor-Color :#1e3d59
+// ParagraphText: #f5f0e1
+// Button-Color :#1e3d59
+// HoverButton-Color :#ff6e40
+//md:py-[50px]
+//md:px-[80px] px-[20px]

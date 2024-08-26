@@ -75,6 +75,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 0px 3px #1e3d59;
 }
 
 .bannerTwoOne {
@@ -82,18 +83,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 0px 3px #1e3d59;
 }
 .bannerTwoTwo {
   background-image: url(./assets/Image/bg-image/banner-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 0px 3px #1e3d59;
 }
 .bannerTwoThree {
   background-image: url(./assets/Image/bg-image/banner-3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 0px 3px #1e3d59;
 }
 
 .container > div {
@@ -114,6 +118,9 @@
   transition: 0.5s;
 }
 .card:hover .hover_btn {
+  bottom: 0;
+}
+.card-swiper:hover .hover_btn {
   bottom: 0;
 }
 

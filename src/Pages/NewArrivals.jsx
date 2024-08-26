@@ -1,9 +1,115 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper/modules";
+import SwiperBtn from "../Components/SwiperBtn/SwiperBtn";
+import { MdZoomOutMap } from "react-icons/md";
+import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import Rating from "react-rating";
+import { AiFillStar } from "react-icons/ai";
+import { products } from "../assets/data/product";
 
 const NewArrivals = () => {
+  const newaddedItem = products?.slice(5, 15);
   return (
-    <div>
-      <h1>NewArrivals</h1>
+    <div className="md:pb-[50px] bg-[#f5f0e1] md:px-[80px] container">
+      <Swiper
+        slidesPerView={6}
+        spaceBetween={20}
+        loop={true}
+        navigation={{
+          nextEl: "review-swiper-button-next",
+          prevEl: "review-swiper-button-prev",
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        }}
+        modules={[Navigation]}
+        className=""
+      >
+        <SwiperBtn title="New Arrivals" />
+        <div>
+          {newaddedItem.map((item) => (
+            <SwiperSlide
+              key={item?.id}
+              className="w-full h-[300px] relative bg-[white] overflow-hidden duration-500 card-swiper rounded-[30px]"
+            >
+              <div className="absolute w-full h-full p-[13px] rounded-[30px]">
+                <div className="card_image">
+                  {item?.image?.map((imageItem, index) => (
+                    <div
+                      key={index}
+                      className="h-[150px] w-full relative rounded-xl"
+                    >
+                      <img
+                        className="absolute top-0 left-0 w-full h-full rounded-[20px] card_image_one"
+                        src={imageItem?.urlOne}
+                        alt=""
+                      />
+                      <img
+                        className="absolute top-0 left-0 w-full h-full rounded-[20px] card_image_two"
+                        src={imageItem?.urlTwo}
+                        alt=""
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <p className="text-[gray] pt-[10px]">{item?.category}</p>
+                  <h4 className="font-bold text-black pb-[6px]">
+                    {item?.name}
+                  </h4>
+                  <div>
+                    <Rating
+                      initialRating={item?.rating}
+                      readonly
+                      fullSymbol={<AiFillStar className="text-[#ff6e40]" />}
+                      emptySymbol={<AiFillStar className="text-[#1e3d59]" />}
+                    />
+                  </div>
+                  <p className="font-bold text-[20px] pb-[10px] text-[#00718f]">
+                    ${item?.price}{" "}
+                    <span className="line-through text-[#aba7a7] text-[15px] font-normal">
+                      ${item?.afterPrice}
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="absolute z-20 flex items-center justify-center w-full h-full bg-[#1e3d5941] hover_btn">
+                <div className="flex items-center gap-[10px]">
+                  <button className="h-[40px] w-[40px] flex items-center justify-center hover:translate-y-[-4px] duration-500 hover:bg-[#ff6e40] hover:text-[white] text-[#1e3d59] bg-[#f5f0e1] rounded-full">
+                    <MdZoomOutMap />
+                  </button>
+                  <button className="h-[40px] w-[40px] flex items-center justify-center hover:translate-y-[-4px] duration-500 hover:bg-[#ff6e40] hover:text-[white] text-[#1e3d59] bg-[#f5f0e1] rounded-full">
+                    <FaHeart />
+                  </button>
+                  <button className="h-[40px] w-[40px] flex items-center justify-center hover:translate-y-[-4px] duration-500 hover:bg-[#ff6e40] hover:text-[white] text-[#1e3d59] bg-[#f5f0e1] rounded-full">
+                    <FaShoppingCart />
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </div>
+      </Swiper>
     </div>
   );
 };
